@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hansen Han</title>
+    <link rel='stylesheet' href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg bg-light navbar-dark bg-dark">
+      <div class="container-fluid" style="margin-left: 20px;">
+          <a class="navbar-brand" href="/index.html">Hansen Han</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="/index.html">Posts</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/projects.html">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="/about_me.html">About</a>
+                  </li>
+              </ul>
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="mailto:hansenrjhan@gmail.com"><button type="button" class="btn btn-outline-light">Contact Me</button></a>
+                </li>
+              </ul>
+          </div>
+      </div>
+    </nav>
+    <!-- Homepage Section-->
+    <div style="width: 85%; margin-left: auto; margin-right: auto; margin-top: 20px; max-width: 750px;">
+        <a href="/index.html">Back to Posts</a>
+        <br>
+        <br>
+        <small class="text-muted">April 26th, 2023</small>
+
+        <h4>Customer Satisfaction Data: Still A Winning Stock Market Strategy?</h4>
+        <p class="card-text"><small><i>A deep dive into the American Consumer Satisfaction Index as a potential indicator for outperforming the S&P 500.</i></small></p>
+        
+        <br>      
+        <main>
+          <div class="card">
+            <div class="card-body">
+              <h7><b>Summary</b></h7>
+              <br>
+              <small>
+                <ul>
+                  <li>The motivation for this research was to test the effectiveness of using American Customer Satisfaction Index (ACSI) scores as a basis for investment strategies. Given previous research suggesting high ACSI scores could predict superior stock market returns, we aimed to replicate these findings and analyze whether these results held true in recent market conditions.</li>
+                  <li>We compared several different investment strategies that use ACSI scores, analyzing their performance from 1996 to 2021 against the S&P 500.</li>
+                  <li>The two most successful strategies historically were those that selected the top company in each sector and those that selected the top 1% of companies across all sectors. These strategies consistently outperformed the S&P 500.</li>
+                  <li>We analyzed the performance of these strategies in five-year intervals to understand their changing effectiveness over time. Recent trends show a decline in their success rates in outperforming the market.</li>
+                </ul>
+              </small>
+            </div>
+          </div>
+          <br/>
+          <br/>
+          <h5><u>Introduction</u></h5>
+          <p>
+            The American Customer Satisfaction Index (ACSI) score is a measure of customer satisfaction with products and services provided by various companies and industries in the United States. The score ranges from 0 to 100, with higher scores indicating higher levels of customer satisfaction. The ACSI is collected through a survey of randomly selected consumers who rate their experiences with a specific product or service on various dimensions such as quality, price, customer service, and website usability.
+          </p>
+          <p>
+            The ACSI scores gained attention due to its potential use in generating higher returns and greater success in the stock market. In 2016, a paper titled <a href="https://www.researchgate.net/publication/303482579_Stock_Returns_on_Customer_Satisfaction_Do_Beat_the_Market_Gauging_the_Effect_of_a_Marketing_Intangible">"Stock Returns on Customer Satisfaction Do Beat the Market: Gauging the Effect of a Marketing Intangible"</a> reported that a portfolio of companies with high ACSI scores outperformed the S&P 500 with a cumulative return of 518% compared to 31% between 2000 and 2014. Given the impressive results, an exchange-traded fund (ETF) was even launched that picked companies based on ACSI scores. Interestingly (as of April 27, 2023), it has since underperformed the S&P 500 with past 5-year return of 37.94% compared to 51.70%.
+          </p>
+          <p>
+            The difference between the published results and subsequent actual performance should not be too surprising because as more investors try to capitalize on the same investment opportunities, the market should become more efficient. Additionally, as more information becomes available to investors, the potential for information asymmetry decreases, making it harder to gain an edge over other investors. Therefore, it is relevant to conduct a follow-up study to replicate previous results and determine if an ACSI-guided strategy is still effective in recent market conditions. 
+          </p>
+          <p>
+            This analysis seeks to answer the following questions:
+          </p>
+          <ul>
+            <li>What is the optimal ACSI-guided investment strategy? Is it better to pick the top companies across all sectors or pick the top company in each sector?</li>
+            <li>Do previous results apply to current/recent market conditions? Has the performance of ACSI-guided strategies eroded in recent years?</li>
+          </ul>
+          <br>
+          <br/>
+          <h5><u>Data & Methods</u></h5>
+          <p>
+            Consumer satisfaction scores from 1996 to 2021 for various companies were collected from the ACSI website in 2021. Each company had an associated sector (ie. Soft Drinks, Apparel, Hotels, etc.). The ACSI dataset was manually annotated to identify if each company was publicly listed, and if so what the company’s ticker was. After annotation, the yfinance python package was used to download annual stock data. The ACSI data is no longer available to the public, but the data up to 2021 used in this analysis can be found on the github repository alongside the code used to analyze it. Of the 564 companies entries in the dataset with ACSI scores, 318 were publicly traded and had tickers. Since some tickers encompassed multiple brands/companies (ie. ACSI surveyed both Sam's Club (Walmart) and Walmart itself), there were a total of 235 unique tickers.
+          </p>
+          <p>Prior to our core analysis, we explored the underlying data through visualization of the consumer satisfaction scores for each company across all available years. This served to provide a preliminary understanding of the distribution of satisfaction scores across different sectors, thereby offering insights into the data's intrinsic structure. Upon sorting the sectors by their mean satisfaction score, we discovered that the top five sectors with the highest satisfaction scores were Soft Drinks, Personal Care and Cleaning Products, Food Manufacturing, Pet Food, and Consumer Shipping. Conversely, the sectors with the lowest satisfaction scores were Internet Service Providers, Subscription Television Service, Internet Service Providers/Fixed-Line Phone, Newspapers, and Video-On Demand Service (Figure 1).</p>
+          <br>
+          <small>
+            <b>Figure 1.</b> Consumer Satisfaction Scores by Sector (1996-2021)<br/>
+            <span><small>ACSI Scores for all publicly traded companies across all years available displayed by sector, with sectors arranged in descending order of mean satisfaction score.
+            </small>
+            </span>
+          </small>
+          <br>
+          <br>
+          <img style="width: 100%" src="/img/acsi_images/sectors_across_years.png" alt="" />   
+          
+          <br/>
+          <br/>
+          <br/>
+          <h5><u>Results</u></h5>
+          <p>We embarked on a comparative analysis of five distinct investment strategies against the performance of the S&amp;P 500 from 1996 to 2021. Each strategy focused on a different facet of ACSI data, from the top-percentile companies across all sectors to a more sector-specific approach. In addition, we considered the performance of all publicly traded companies with available ACSI data to gauge whether this pool inherently outperforms or underperforms the broader market (Figure 2a).</p>
+          <br>
+          <small>
+            <b>Figure 2.</b> Comparative Analysis of the Growth and Annual Returns of ACSI-Based Investment Strategies versus the S&P 500 (1996-2021)<br/>
+            <span><small>Long-term performance comparison of ACSI-based investment strategies and the S&P 500. (a) Composite line plot showing the growth of an initial $10,000 investment from 1996 to 2021 using the five ACSI strategies and S&P 500. (b) Compound bar plot illustrating the annual return for each of these strategies from 1996 to 2021.
+            </small>
+            </span>
+          </small>
+          <br>
+          <br>
+          <img style="width: 100%" src="/img/acsi_images/all_strategies_96_21.png" alt="" />   
+          <br>
+          <br>
+          <p>Our findings show a considerable variance in the performance landscape across the different strategies. The strategy that selected the top company in each sector based on ACSI score each year exhibited a remarkable cumulative return of 1,217.44% and an average annual return of 11.47%. This strategy outperformed the S&amp;P 500 in 17 of the 26 years considered, demonstrating a 65.4% success rate (Table 1).</p>
+          <br>
+          <small>
+            <b>Table 1.</b> Performance Metrics for ACSI-Based Investment Strategies and the S&P 500 (2000-2023)<br/>
+            <span><small>The cumulative return, mean annual return, standard deviation (SD) of annual return, and the number of years each strategy outperformed the S&P 500 over the period from 1996 to 2021.</small>
+            </span>
+          </small>
+          <br>
+          <br>
+          <small>
+            <table class="table table-sm">
+                <thead class="thead-dark">
+                    <tr class="table-dark">
+                        <th>Strategy</th>
+                        <th>Cumulative Return</th>
+                        <th>Mean Annual Return</th>
+                        <th>SD Annual Return</th>
+                        <th>Years Beating S&P 500</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                      <td>Top Company in Each Sector</td>
+                      <td style="color: green;">1,217.44%</td>
+                      <td style="color: green;">11.47%</td>
+                      <td style="color: green;">14.83%</td>
+                      <td  style="color: green;">17 (65.4%)</td>
+                    </tr>
+                    <tr>
+                      <td>99th Percentile Across All Sectors</td>
+                      <td style="color: green;">3,607.41%</td>
+                      <td style="color: green;">20.88%</td>
+                      <td style="color: red;">39.91%</td>
+                      <td style="color: black;">13 (50.0%)</td>
+                    </tr>
+                    <tr>
+                      <td>95th Percentile Across All Sectors</td>
+                      <td style="color: green;">798.17%</td>
+                      <td style="color: green;">10.07%</td>
+                      <td style="color: red;">16.24%</td>
+                      <td style="color: red;">12 (46.2%)</td>
+                    </tr>
+                    <tr>
+                      <td>90th Percentile Across All Sectors</td>
+                      <td style="color: red;">381.79%</td>
+                      <td style="color: red;">7.52%</td>
+                      <td style="color: green;">16.92%</td>
+                      <td style="color: red;">10 (38.5%)</td>
+                    </tr>
+                    <tr>
+                      <td>75th Percentile Across All Sectors</td>
+                      <td style="color: red;">467.97%</td>
+                      <td style="color: red;">8.05%</td>
+                      <td style="color: green;">15.77%</td>
+                      <td style="color: red;">12 (46.2%)</td>
+                    </tr>
+                    <tr>
+                      <td>All Publicly Traded Companies w/ ACSI Data</td>
+                      <td style="color: green;">760.51%</td>
+                      <td style="color: red;">9.72%</td>
+                      <td style="color: green;">15.1%</td>
+                      <td style="color: red;">12 (46.2%)</td>
+                    </tr>
+                    <tr>
+                        <td>S&P 500</td>
+                        <td>721.19%</td>
+                        <td>10.02%</td>
+                        <td>17.82%</td>
+                        <td>N/A</td>
+                    </tr>
+                </tbody>
+            </table>
+          </small>
+          <br>
+          <p>The 99th percentile strategy across all sectors delivered a substantial cumulative return of 3,607.41%, with an average annual return of 20.88%. However, this strategy only managed to outperform the S&amp;P 500 in half of the years, indicating a higher volatility, as evidenced by the standard deviation of the annual return (Table 1).</p>
+          <p>The other strategies, representing the 95th, 90th, and 75th percentiles across all sectors, showed lower returns and success rates (Figure 2b). Interestingly, the performance of all publicly traded companies with available ACSI data was comparable to the S&amp;P 500, indicating that the results could potentially be applicable to the broader market (Table 1).</p>
+          <p>After seeing how the 99th, 95th, 90th, and 75th percentile strategies performed, we wondered if there was a direct link between the percentile used and the total returns. To figure this out, we tested every percentile from 1 to 99. The results were interesting: we primarily noticed a relatively flat trend with most strategies underperformed compared to the S&P 500. However, a significant increase in returns became evident around the 90th percentile. This sudden steep rise indicated that a strategy focused on companies with exceptionally high customer satisfaction scores had a greater potential for beating the market (Figure 3).</p>
+          <br>
+          <br>
+          <small>
+            <b>Figure 3.</b> Relationship between Percentile Cutoffs and Cumulative Returns (1996-2021)<br/>
+            <span><small>Correlation between percentile cutoffs of ACSI scores and the corresponding cumulative returns from 1996 to 2021. The return of the S&P 500 is represented by a horizontal line. The majority of strategies underperform compared to the S&P 500, marked by a red horizontal line, until a steep increase in returns is observed starting from the 90th percentile.
+            </small>
+            </span>
+          </small>
+          <br>
+          <br>
+          <img style="width: 100%" src="/img/acsi_images/all_percentile_curve.png" alt="" /> 
+          <br>
+          <br>
+          <br>
+          <p>Recognizing that cumulative returns from a strategy could be primarily driven by significant past performance, we sought to understand if the outperformance of ACSI-guided strategies was a lingering effect of previous years. Essentially, we aimed to answer the initial questions: are previous results still applicable to current market conditions, or has the performance of ACSI-guided strategies waned over time? To address this, we examined the performance of each strategy over five-year intervals, specifically looking at the frequency of outperforming the S&amp;P 500 during these periods (Figure 4).</p>
+          <br>
+          <br>
+          <small>
+            <b>Figure 4.</b> Five-Year Success Rate of ACSI-guided Strategies vs. S&P 500 (1997-2021)<br/>
+            <span><small>Success rates of different ACSI-guided strategies in outperforming the S&P 500 over five-year periods from 1997 to 2021. Over time, the success rate of these strategies generally decreases, suggesting a declining effectiveness of ACSI-guided strategies in recent years.
+            </small>
+            </span>
+          </small>
+          <br>
+          <br>
+          <img style="width: 100%" src="/img/acsi_images/five_year_beating_curve.png" alt="" /> 
+          <br>
+          <br>
+          <p>The findings suggested an overall declining trend in the performance of these strategies over time. For instance, the 95th percentile strategy, which had a strong showing between 2002 and 2011 with an 80% success rate, demonstrated a marked decrease to a 20% success rate in the subsequent years. Similarly, the top company in each sector strategy, which maintained an 80% success rate through 2012-2016, slipped to a 40% success rate in the most recent five years. This potentially suggests that while ACSI-guided strategies have shown promise in the past, their reliability in outperforming the market may have diminished in recent years.</p>
+          <br>
+          <br>
+          <h5><u>Conclusion</u></h5>
+          <p>The exploration of ACSI-guided investment strategies from 1996 to 2023 reveals a nuanced picture with shifting implications for investors. Historically, these strategies, particularly the selection of the top company in each sector or using a 99th percentile cutoff across all sectors, have generated substantial returns, outperforming the S&amp;P 500. However, the performance landscape of these strategies has evolved over time.</p>
+
+          <p>Recent trends indicate a decline in the consistent outperformance of these strategies over the S&amp;P 500, suggesting a potential erosion in their effectiveness in the current market. When analyzed in five-year intervals, the success rate of outperforming the market has generally decreased for these strategies. Hence, while historically significant, the ability of ACSI-guided strategies to consistently outperform in recent years seems less reliable.</p>
+
+          <p>Adding to this evolving landscape is the change in the availability of ACSI scores. Historically, these scores were freely accessible, but now they are proprietary, no longer available to the general public. This shift has the potential to alter the performance of ACSI-guided strategies in future years. The restriction of this information could create a market asymmetry, potentially benefiting those who can afford access to this data.</p>
+
+          <p>In summary, the optimal ACSI-guided investment strategy appears to have shifted over time, with recent years suggesting a decrease in their utility trying to beat the market. The changing access to ACSI scores further complicates the landscape, potentially impacting the future performance and applicability of these strategies. As such, while the ACSI score remains a valuable metric of customer satisfaction, its role as a guiding tool for investment strategies should be considered in light of these evolving dynamics.</p>
+
+        
+          <br>
+          <br>
+          <div class="text-muted">
+            <h6>Disclaimer</h6>
+            <small>
+                The information provided in this article is for educational and informational purposes only and should not be construed as financial or investment advice. The author and the publisher are not financial advisors or professionals and do not claim to be providing personalized financial advice. The article is based on the author's research and analysis, and the results reported may not be applicable to individual circumstances. Before making any financial decisions or investments, readers should consult with a financial advisor or professional to consider their specific situation, goals, and risk tolerance. Past performance is not indicative of future results, and no representation or warranty is made regarding the accuracy or completeness of the information provided.
+            </small>
+          </div>
+          
+        
+      
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+      
+        </main>
+        <!-- Posts -->
+        
+        <!-- Footer -->
+        <br>
+        <br>
+        <br>
+        <p><small class="text-muted">© 2023 Hansen Han</small></p>
+        
+    </div>
+
+    
+
+</body>
+
+
+</html>
