@@ -54,7 +54,7 @@
 </head>
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg bg-light navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid" style="margin-left: 20px;">
           <a class="navbar-brand" href="/index.html">Hansen Han</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -74,7 +74,7 @@
             </ul>
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                  <a class="nav-link" href="mailto:hansenrjhan@gmail.com"><button type="button" class="btn btn-outline-light">Contact Me</button></a>
+                  <a class="nav-link" href="mailto:hansenrjhan@gmail.com"><button type="button" class="btn btn-outline-secondary">Contact Me</button></a>
               </li>
             </ul>
           </div>
@@ -88,6 +88,7 @@
         <br>
         <div>
           
+
           <div class="card mb-9">
             <div class="row g-0">
               <!--div class="col-md-4">
@@ -95,154 +96,40 @@
               </div-->
               <div>
                 <div class="card-body">
-                  <h5 class="card-title">Zillow Scraping</h5>                  
-                  <p class="card-text">The zillow_scraper Python package was created to automate the process of gathering real estate listings from Zillow. Designed to work with both rental and for-sale properties across multiple locations, the tool collects detailed attributes for each listing. Datasets gathered using this tool can serve as a valuable resources for users interested in market trend analysis, investment evaluation, and housing policy research.
-                  </p>
-                  <p class="card-text">
-                    <span class="card-text">
-                      <small class="text-muted"><b>Tools:</b> Python (bs4, selenium)</small>
-                    </span>
-                  </p>
-                  <a href="https://github.com/hansenrhan/zillow_scraper" class="card-link">GitHub</a>
+                  <ul>
+                    <li>
+                      <p><b>Zillow Scraping</b><span class="card-text"> - Python package for collecting rental and sales data from zillow. (<a href="https://github.com/hansenrhan/zillow_scraper" class="card-link">GitHub</a>)</span>
+                    </li>
+                    <li>
+                      <p><b>S&P 500 Backtesting Analysis</b>
+                        <span class="card-text"> - Used data from 2020 to 2023 to compare trend following and/or mean reversion strategies against a buy and hold strategy.
+                        (<a href="https://github.com/hansenrhan/backtesting/tree/master/stocks">GitHub</a>, <a href="/r_markdown_files/sp_500_backtesting_analysis.html">R Markdown File</a>)</span></p>
+                    </li>
+                    <li>
+                      <p><b>Consumer Satisfaction Backtesting Analysis</b><span class="card-text"> - Tested trading strategies using consumer satisfaction and stock data from 1996 for 200+ companies. (<a href="/posts/consumer_satisfaction_investing.html">Article</a>,
+                  <a href="https://github.com/hansenrhan/backtesting/tree/master/consumer_satisfaction">GitHub</a>)</span>
+                    </li>
+                    <li>
+                      <p><b>Bitcoin Backtesting Analysis</b>
+                        <span class="card-text"> - Used data from 2014 to 2023 to compare trend following and/or mean reversion strategies against a buy and hold strategy.
+                        (<a href="https://github.com/hansenrhan/backtesting/tree/master/bitcoin">GitHub</a>, <a href="/r_markdown_files/crypto_backtesting_analysis.html">R Markdown File</a>)</span></p>
+                    </li>
+                    <li>
+                      <p><b>Cryotocurrency Trading Bots</b>
+                        <span class="card-text"> - Wrote custom trading scripts to execute trend following and mean reversion strategies for cryptocurrency.
+                        (<a href="https://github.com/hansenrhan/crypto_trader">GitHub</a>)</span></p>
+                    </li>
+                    <li>
+                      <p><b>Twitter Sentiment Trading Bot</b>
+                        <span class="card-text"> - Created a stock trading bot that used VADER to analyze sentiment of companies on Twitter and trade their stocks using the Alpaca and Twitter APIs.
+                        (<a href="https://github.com/hansenrhan/alpaca_sentiment_trader">GitHub</a>)</span></p>
+                    </li>
+                  </ul>    
                 </div>
               </div>
             </div>
           </div>
-          <div class="horizontal-line"></div>
-          <div class="card mb-9">
-            <div class="row g-0">
-              <!--div class="col-md-4">
-                <img src="img/acsi_images/percentile_backtest_results.png" class="img-fluid rounded-start" alt="..." style="height: 100%; object-fit: cover;">
-              </div-->
-              <div>
-                <div class="card-body">
-                  <h5 class="card-title">S&P 500 Backtesting Analysis</h5>
-                  <h6 class="card-subtitle mb-2 text-muted"><span class="badge bg-secondary">Finance</span></h6>
-                  
-                  <p class="card-text">Hourly S&P 500 Index Fund (SPY) price data from 2021 to 2023 was analyzed to evaluate whether trend following and/or mean reversion strategies with different parameters outperformed a buy and hold strategy.</p>
-                  <p class="card-text">
-                    <span class="card-text">
-                      <small class="text-muted"><b>Tools:</b> R (dplyr, ggplot2), Python (pandas, numpy, yfinance)</small>
-                    </span>
-                  </p>
-                  <a href="https://github.com/hansenrhan/backtesting/tree/master/stocks" class="card-link">GitHub</a>
-                  <a href="/r_markdown_files/sp_500_backtesting_analysis.html" class="card-link">R Markdown File</a>                   
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="horizontal-line"></div>
-          <div class="card mb-9">
-            <div class="row g-0">
-              <!--div class="col-md-4">
-                <img src="img/acsi_images/percentile_backtest_results.png" class="img-fluid rounded-start" alt="..." style="height: 100%; object-fit: cover;">
-              </div-->
-              <div>
-                <div class="card-body">
-                  <h5 class="card-title">Consumer Satisfaction Backtesting Analysis</h5>
-                  <h6 class="card-subtitle mb-2 text-muted"><span class="badge bg-secondary">Finance</span></h6>
-                  
-                  <p class="card-text">Used annual stock data and consumer satisfaction data from the American Consumer Satisfaction Index (ACSI) for 200+ companies from 1996 to 2021 to explore the potential of using consumer satisfaction scores as an investment strategy.</p>
-                  <p class="card-text">
-                    <span class="card-text">
-                      <small class="text-muted"><b>Tools:</b> R (dplyr, ggplot2), Python (pandas, numpy, yfinance)</small>
-                    </span>
-                  </p>
-                  <a href="/posts/consumer_satisfaction_investing.html" class="card-link">Article</a>
-                  <a href="https://github.com/hansenrhan/backtesting/tree/master/consumer_satisfaction" class="card-link">GitHub</a>
-                  <!--a href="/r_markdown_files/sp_500_backtesting_analysis.html" class="card-link">R Markdown File</a-->                   
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="horizontal-line"></div>
-          <div class="card mb-9">
-            <div class="row g-0">
-              <!--div class="col-md-4">
-                <img src="img/comparison_plot_2014_2023.png" class="img-fluid rounded-start" alt="..." style="height: 100%; object-fit: cover;">
-              </div-->
-              <div>
-                <div class="card-body">
-                  <h5 class="card-title">Bitcoin Backtesting Analysis</h5>
-                  <h6 class="card-subtitle mb-2 text-muted"><span class="badge bg-secondary">Finance</span> <span class="badge bg-warning">Cryptocurrency</span></h6>
-                  <p class="card-text">Bitcoin price data from 2014 to 2023 was analyzed to evaluate whether trend following and/or mean reversion strategies with different parameters outperformed a buy and hold strategy. 
-                  </p>
-                  <p class="card-text">
-                    <span class="card-text">
-                      <small class="text-muted"><b>Tools:</b> Python (pandas, numpy, matplotlib, seaborn)</small>
-                    </span>
-                  </p>
-                  <!--a href="/posts/bitcoin_backtesting_analysis.html" class="card-link">Article</a-->
-                  <a href="https://github.com/hansenrhan/backtesting/tree/master/bitcoin" class="card-link">GitHub</a>
-                  <a href="/r_markdown_files/crypto_backtesting_analysis.html" class="card-link">R Markdown File</a>   
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="horizontal-line"></div>
-          <div class="card mb-9">
-            <div class="row g-0">
-              <!--div class="col-md-4">
-                <img src="img/crypto_trading_main.png" class="img-fluid rounded-start" alt="..." style="height: 100%; object-fit: cover;">
-              </div-->
-              <div>
-                <div class="card-body">
-                  <h5 class="card-title">Cryptocurrency Trading Bots</h5>
-                  <h6 class="card-subtitle mb-2 text-muted"><span class="badge bg-secondary">Finance</span> <span class="badge bg-warning">Cryptocurrency</span></h6>
-                  <p class="card-text">Automated bots were set up on a Raspberry Pi to trade Bitcoin on Coinbase, employing both mean reversion and trend following strategies to capitalize on short-term market fluctuations and long-term price trends.
-                  </p>
-                  <p class="card-text">
-                    <span class="card-text">
-                      <small class="text-muted"><b>Tools:</b> Python (sqlite3, ccxt), Raspberry Pi</small>
-                    </span>
-                  </p>
-                  <a href="https://github.com/hansenrhan/crypto_trader" class="card-link">GitHub</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="horizontal-line"></div>
-          <div class="card mb-9">
-            <div class="row g-0">
-              <!--div class="col-md-4">
-                <img src="img/alpaca-logo-white-bg.png" class="img-fluid rounded-start" alt="..." style="height: 100%; object-fit: cover;">
-              </div-->
-              <div>
-                <div class="card-body">
-                  <h5 class="card-title">Stock Trading Bot using Twitter Sentiment w/ the Alpaca API</h5>
-                  <h6 class="card-subtitle mb-2 text-muted"><span class="badge bg-secondary">Finance</span></h6>
-                  <p class="card-text">Stock trading bot was set up for the Alpaca API that uses VADER to perform sentiment analysis on tweets. This was a project set up using the Alpaca paper trading feature to explore claims from published work that suggested twitter sentiment predicted market changes. Set up on a Raspberry Pi to run 24/7.
-                  </p>
-                  <p class="card-text">
-                    <span class="card-text">
-                      <small class="text-muted"><b>Tools:</b> Python (tweepy, vaderSentiment, numpy, alpaca_trade_api), Raspberry Pi</small>
-                    </span>
-                  </p>
-                  <a href="https://github.com/hansenrhan/alpaca_sentiment_trader" class="card-link">GitHub</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="horizontal-line"></div>
-        <div class="card mb-9">
-          <div class="row g-0">
-            <div>
-              <div class="card-body">
-                <h5 class="card-title">Simple Moving Average Crossover Trading Bot w/ the Alpaca API</h5>
-                <h6 class="card-subtitle mb-2 text-muted"><span class="badge bg-secondary">Finance</span></h6>
-                
-                <p class="card-text">Stock trading bot for the Alpaca API that uses a simple moving average (SMA) crossover strategy to detect buy and sell signals.</p>
-                <p class="card-text">
-                  <span class="card-text">
-                    <small class="text-muted"><b>Tools:</b> Python (pandas, numpy, alpaca_trade_api)</small>
-                  </span>
-                </p>
-                <a href="https://github.com/hansenrhan/alpaca_sma_crossover_trader" class="card-link">GitHub</a>
-              </div>
-            </div>
-          </div>
-        </div>
+
         <br>
         <br>
         <br>
